@@ -205,4 +205,24 @@ h2{
 }
 .d{
     background-image: url(/images/europe.png);
+} 
+
+/* Fin Suggestions */
+
+
+/* Footer */
+
+footer{
+    margin-top: 100px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--second-color);
+    text-decoration: none;
+    position: relative;
+}
+
+footer img{
+    margin: 50px 0;
 }
