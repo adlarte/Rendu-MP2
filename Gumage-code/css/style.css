@@ -1,0 +1,208 @@
+/* Fondations CSS (variables, propriétée par défault...) */
+
+html{
+    --main-color: #FFF0E5;
+    --second-color: #E288FF;
+    --tiers-color: #FFF04A;
+    --dark-color: #1a1a1a;
+}
+
+@font-face {
+    font-family: 'impactregular';
+    src: url('fonts/impact-webfont.woff2') format('woff2'),
+         url('fonts/impact-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: var(--main-color);
+}
+
+/* Barre d'annonce */
+
+.offre{
+    background: var(--second-color);
+    justify-content: center;
+}
+
+.offre p{
+    text-align: center;
+}
+
+/* Fin barre d'annonce */
+
+
+
+/* Barre de navigation */
+
+nav{
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border: solid 3px var(--dark-color);
+    border-left:none;
+    border-right:none;
+}
+
+.logo{
+    width: 110px;
+    height: auto;
+}
+
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li{
+    font-weight: 700;
+    color: var(--dark-color);
+}
+.panier{
+    width: 30px;
+}
+
+/* Fin barre de navigation */
+
+
+/* Produit */
+
+/* partie gauche */
+
+
+.product{
+    display: flex;
+    margin: 0px 50px;
+    justify-content: center;
+}
+
+.checkout{
+    margin: 50px;
+}
+
+
+h1{
+    font-family: 'impact';
+    font-size: 200px;
+}
+
+h2{
+    font-size: 100px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+.bouton{
+    display: block;
+    text-align: center;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 100px;
+    padding: 30px 0px;
+    border-radius: 20px;
+    background-color: var(--second-color);
+    font-weight: 700;
+}
+
+/* Fin partie gauche */
+
+/* partie droite */
+
+.mockup{
+    margin-top: 100px;
+    width: 700px;
+    height: 700px;
+    background-image: url(/images/anglais.png);
+    background-position: center;
+    background-size: cover;
+    border: solid 3px var(--dark-color);
+}
+
+/* Fin partie droite */
+
+
+
+/* Description Produit */
+
+.description{
+    display: flex;
+}
+
+.image1, .image2{
+    width: 600px;
+    height: 600px;
+    background-position: center;
+    margin: 0 auto;
+    background-size: cover;
+    border: solid 3px var(--dark-color);
+}
+.image1{
+    background-image: url(/images/imagea.png);
+}
+
+.image2{
+    background-image: url(/images/imageb.png);
+}
+
+.colonnedroite, .colonnegauche{
+    justify-content: center;
+    margin: 50px;
+}
+
+.txt{
+    font-size: 20px;
+    margin: 100px 100px;
+}
+
+/* Fin Description Produit */
+
+
+/* Suggestions */
+.suggestion p{
+    text-align: center;
+    margin: 20px;
+}
+.continents{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 100px;
+    justify-content: space-around;
+}
+.catégorie{
+    justify-content: center;
+}
+.image{
+    background-color: #E288FF;
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.a{
+    background-image: url(/images/afrique.png);
+}
+.b{
+    background-image: url(/images/amerique.png);
+}
+.c{
+    background-image: url(/images/asie.png);
+}
+.d{
+    background-image: url(/images/europe.png);
+}
